@@ -1,3 +1,5 @@
+import { gsap } from "gsap";
+
 const container = document.querySelector('#content');
 
 //adding the home contents
@@ -50,6 +52,14 @@ function menupage() {
         </div>
     `
     container.innerHTML = menuTemplate;
+
+    gsap.from(container.querySelectorAll('*'),{
+        autoAlpha: 0,
+        y: 10,
+        x: 10,
+        duration: 0.55,
+        stagger: 0.08
+    });
 }
 
 export {menupage};

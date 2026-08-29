@@ -1,6 +1,7 @@
 import "./styles.css";
 import {homepage} from "./home.js";
 import {menupage} from "./menu.js";
+import { gsap } from "gsap";
 
 console.log("Hi! I'm working!");
 
@@ -12,9 +13,3 @@ homepage();
 logo.addEventListener('click', homepage);
 home.addEventListener('click', homepage);
 menu.addEventListener('click', menupage);
-
-document.addEventListener('click', (e) => {
-    if (e.target.id === 'seamenu') {
-        menupage();
-    }
-});
