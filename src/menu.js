@@ -4,7 +4,7 @@ const container = document.querySelector('#content');
 function menupage() {
     container.innerHTML = '';
 
-    /* const tagline = "TAGLINE OF THE RESTO";
+    const tagline = "TAGLINE OF THE RESTO";
     const description = "This is where the description for the restaurant goes";
 
     const homeTemplate = `
@@ -14,7 +14,7 @@ function menupage() {
             <button>"sea" the menu</button>
         </div>
     `
-    container.innerHTML = homeTemplate; */
+    container.innerHTML = homeTemplate;
 }
 
 export {menupage};
