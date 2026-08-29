@@ -1,6 +1,6 @@
 import porksilog from './assets/porksilog.jpg'
 const container = document.querySelector('#content');
-
+import { menupage } from './menu.js';
 
 //adding the home contents
 function homepage() {
@@ -14,7 +14,7 @@ function homepage() {
             <div id="intro-holder">
                 <h1>${tagline}</h1>
                 <p>${description}</p>
-                <button>"sea" the menu</button>
+                <button id="seamenu">"sea" the menu</button>
             </div>
             <div id="home-image-holder">
                 <img src="${porksilog}" alt="Porksilog">
@@ -22,6 +22,9 @@ function homepage() {
         </div>
     `
     container.innerHTML = homeTemplate;
+
+    const seaBtn = document.querySelector('#seamenu');
+    seaBtn.addEventListener('click', menupage);
 }
 
 export {homepage};

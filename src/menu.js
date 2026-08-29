@@ -4,17 +4,52 @@ const container = document.querySelector('#content');
 function menupage() {
     container.innerHTML = '';
 
-    const tagline = "TAGLINE OF THE RESTO";
-    const description = "This is where the description for the restaurant goes";
-
-    const homeTemplate = `
-        <div id="home-container">
-            <h1>${tagline}</h1>
-            <p>${description}</p>
-            <button>"sea" the menu</button>
+    const menuTemplate = `
+        <div id="menu-container">
+            <div id="menu-1">
+                <h4>Tapsilog</h4>
+                <p>Pan-fried beef tapa served with garlic fried rice and egg</p>
+                <hr>
+            </div>
+            <div id="menu-2">
+                <h4>Longsilog</h4>
+                <p>Longganisa sausages served with garlic fried rice and egg</p>
+                <hr>
+            </div>
+            <div id="menu-3">
+                <h4>Tocilog</h4>
+                <p>Sweet-savory flavor of the sweetened and cured pork belly in a saltpeter mixture served with garlic fried rice and egg</p>
+                <hr>
+            </div>
+            <div id="menu-4">
+                <h4>Bangsilog</h4>
+                <p>Butterflied and fried marinated boneless milkfish served with garlic fried rice and egg</p>
+                <hr>
+            </div>
+            <div id="menu-5">
+                <h4>Cornsilog</h4>
+                <p>Garlic fried rice paired with pan-fried corned beef with some diced potatoes and onions thrown in</p>
+                <hr>
+            </div>
+            <div id="menu-6">
+                <h4>Hotsilog</h4>
+                <p>Pan-fried hotdogs served with garlic fried rice and egg</p>
+                <hr>
+            </div>
+            <div id="menu-7">
+                <h4>Chicksilog</h4>
+                <p>Well, you guessed it right! Crispy fried chicken paired with the infamous garlic fried rice with egg</p>
+                <hr>
+            </div>
+            <div id="menu-8">
+                <h4>Porksilog</h4>
+                <p>Crispy deep-fried pork loin served with garlic fried rice and egg</p>
+                <hr>
+            </div>
+            
         </div>
     `
-    container.innerHTML = homeTemplate;
+    container.innerHTML = menuTemplate;
 }
 
 export {menupage};

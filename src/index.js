@@ -12,3 +12,9 @@ homepage();
 logo.addEventListener('click', homepage);
 home.addEventListener('click', homepage);
 menu.addEventListener('click', menupage);
+
+document.addEventListener('click', (e) => {
+    if (e.target.id === 'seamenu') {
+        menupage();
+    }
+});
