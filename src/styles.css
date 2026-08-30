@@ -40,16 +40,21 @@ header {
     backdrop-filter: blur(10px);
 }
 
+.logobox{
+    padding: 0;
+}
+
 .logobox a{
     color: rgb(0, 0, 0);
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     text-decoration: none;
     font-family: "Caesar Dressing", system-ui;
-
+    padding-inline: 0px;
+    margin: 0;
 }
 
 .left-right {
-    width: 15%;
+    width: 20%;
 }
 
 .booking-section {
@@ -80,8 +85,8 @@ nav {
 }
 
 .navbutton-flex button {
-    width: 75px;
-    color: rgb(0, 0, 0);
+    width: 60px;
+    color: rgb(56, 41, 41);
     background-color: #f0f8ff00;
     border: 0 solid rgb(228, 228, 228);
     border-radius: 0px;
@@ -92,13 +97,16 @@ nav {
 
     &:hover {
         background-color: #f1f4f748;
-        color: rgb(0,0,0);
+        color: rgb(56, 41, 41);
         transform: scale(1.05);
     }
+
 }
 
+
+
 .header-elements {
-    padding: 20px 0px 3px 0px;
+    padding: 20px 0px 0px 0px;
 }
 
 #home-container {
@@ -154,8 +162,8 @@ nav {
 }
 
 #home-image-holder {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #home-image-holder img {
@@ -196,4 +204,80 @@ nav {
 #menu-container hr {
     width: 90%;
     align-self: center;
+}
+
+#about-container {
+    padding-inline: 20%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+#about-container h1 {
+    font-family: "Gudea", sans-serif;
+    font-size: 1.85rem;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+#about-container p {
+    font-family: 'Gudea', sans-serif;
+    margin-bottom: 8px;
+    color: #3f3535;
+}
+
+#about-container a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 800;
+    padding-inline: 0;
+}
+
+#contact-container {
+    padding-inline: 10%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: justify;
+    color: #5a4a4a;
+    font-family: 'Gudea', sans-serif;
+    font-weight: bold;
+}
+
+#contact-container .email {
+    padding-inline: 35px;
+}
+
+#contact-container .social-links, a{
+    display: inline-flex;
+    padding-inline: 35px;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+}
+
+#contact-container p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+#contact-container .username {
+    width: 0;
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff9f3;
+    background-color: #3d3030;
+    padding-inline: 5px;
 }
